@@ -1,0 +1,47 @@
+
+#labNumber {
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #911d1d;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #e6ffe9;
+  color: #000000;
+}
+
+h1 {
+  color: #030c08;
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* note: I don't have styling for h2 because I made that into the labNumber id
+*/
+
+h3 {
+  font-size: 1.2em;
+  color: #1e20a6;
+  font-family: 'Courier New', Courier, monospace
+
+}
+
+
+a:link {
+  text-decoration: none;
+  color: #030c08;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+a:visited {
+  color: green;
+}
+
+ol.skills {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #e6ffe9;
+  border: 5px solid #030c08;
+  padding: 20px;
+}

@@ -1,0 +1,103 @@
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #911d1d;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #95d89c;
+  color: #000000;
+}
+
+h1 {
+  color: #030c08;
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #1e20a6;
+  font-family: 'Courier New', Courier, monospace
+
+}
+
+
+a:link {
+  text-decoration: none;
+  color: #030c08;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+a:hover, a:visited {
+  text-decoration: none;
+  color: green;
+}
+a:visited {
+  color: green;
+}
+
+ol.skills {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #7bc183;
+  border: 5px solid #030c08;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+}
+main nav ul {
+  margin-top: 20px;
+  padding: 10px;
+  list-style: none;
+}
+main nav ul li {
+  margin: 0 1em 
+}
+
+main {
+  width: 65%;
+}
+main nav ul li a {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  border: 4px solid#000000;
+  background-color: #7bc183;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0px;
+  column-gap: 40px;
+}
+
+@media (max-width: 800px) {
+  ul {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-color: rgb(119, 204, 204);
+  }
+}
+@media (max-width: 800px) {
+  ol.skills {
+    background-color: rgb(85, 163, 163);
+  }
+}
+@media (max-width: 800px) {
+  main nav ul li a {
+    background-color: rgb(85, 178, 178);
+  }
+}
+
+
+@media (max-width: 800px) {
+  a:hover, a:visited {
+    color: rgb(23, 76, 97);
+  }
+}

@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(13, 72, 41);
+    padding-bottom: 10px;
+    border-bottom: 8px dashed rgb(13, 72, 41);
+}
+
+body {
+    background-color: rgb(71, 184, 124);
+}
+input {
+    background-color: rgb(152, 217, 181);
+}
+.table {
+ border-collapse: collapse;
+ margin: 10px;
+ font-size: 17px;
+ min-width: 600px;
+}
+th {
+    border: 2px solid;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(64, 167, 112);
+    padding: 10px;
+}
+td {
+    border: 2px solid;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+
+}
+input, label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding: 5px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+:link
+{
+    color: rgb(0, 0, 0);
+}

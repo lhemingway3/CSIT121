@@ -1,0 +1,92 @@
+html,body {
+    
+    background-image: url('images/background.jpg');
+    font-family: 'Courier New', Courier, monospace
+}
+h1 {
+    color: #552e34;
+    background-color: #fccfd8;
+    border: 4px solid #552e34;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+}
+
+
+p {
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #fccfd8;
+    border: 4px solid #552e34;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 70%;
+    margin: 20px auto;
+    
+}
+footer {
+    background-color: #fccfd8;
+    border: 4px solid #552e34;
+    padding: 15px;
+    font-weight: bold;
+    width: 60%;
+    margin: 20px auto;
+}
+img {
+    border: 4px solid #552e34;
+    margin: 30px auto;
+    text-align: center;
+
+  }
+  
+  a:link,
+  a:visited {
+    color: #552e34;
+    
+  }
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #fccfd8;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  span {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fabccb;
+  }

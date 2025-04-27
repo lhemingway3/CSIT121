@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Data Toggle</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #7ce2af
+        }
+
+        th {
+            background-color: #7c0f65;
+            color: white;
+        }
+
+        .button {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            border: 4px solid rgb(55, 12, 211);
+            background: rgba(20, 192, 4, 0.5);
+            color: rgb(230, 36, 78);
+            outline: none;
+            border-radius: 30px;
+            font-size: 30px;
+            width: 500px;
+
+        }
+
+        .button:hover {
+            color: black;
+            background: white;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<button id="toggleButton" class="button">Get Employee Data</button>
+<br><br>
+<table id="employeeTable">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Title</th>
+            <th>Division</th>
+            <th>Building</th>
+            <th>Room</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Employee rows will go here -->
+        <tr>
+            <td>Jitendra</td><td>Kumar</td><td>Engineer</td><td>Materials</td><td>327</td><td>19</td>
+        </tr>
+        <tr>
+            <td>Amit</td><td>Kumar</td><td>Accountant</td><td>Accts Payable</td><td>326</td><td>14</td>
+        </tr>
+        <tr>
+            <td>Akash</td><td>Kumar</td><td>Engineering Manager</td><td>Materials</td><td>327</td><td>21</td>
+        </tr>
+        <tr>
+            <td>Aishwarya</td><td>Kulshrestha</td><td>Engineer</td><td>Materials</td><td>327</td><td>22</td>
+        </tr>
+        <tr>
+            <td>Sachin</td><td>Kumar</td><td>Engineer</td><td>Materials</td><td>327</td><td>24</td>
+        </tr>
+        <tr>
+            <td>Vikash</td><td>kumar</td><td>COO</td><td>Management</td><td>216</td><td>26</td>
+        </tr>
+        <tr>
+            <td>Suvam</td><td>Basak</td><td>Accountant</td><td>Accts Payable</td><td>326</td><td>30</td>
+        </tr>
+        <tr>
+            <td>Abhinav</td><td>kumar</td><td>COO</td><td>Management</td><td>216</td><td>32</td>
+        </tr>
+        <tr>
+            <td>DhanPal</td><td>Singh</td><td>Engineering Manager</td><td>Materials</td><td>327</td><td>21</td>
+        </tr>
+        <tr>
+            <td>Elliot</td><td>Asher</td><td>Human Resources</td><td>Management</td><td>225</td><td>32</td>
+        </tr>
+        <tr>
+            <td>Cheyenne</td><td>Morales</td><td>Marketing Manager</td><td>Marketing</td><td>232</td><td>16</td>
+        </tr>
+        <tr>
+            <td>Brylee</td><td>Andersen</td><td>Software Engineer</td><td>Technology</td><td>324</td><td>15</td>
+        </tr>
+        <tr>
+            <td>Jayvyn</td><td>Sharp</td><td>Data Analyst</td><td>Analytics</td><td>310</td><td>12</td>
+        </tr>
+        <tr>
+            <td>Natalia</td><td>Wilson</td><td>VP</td><td>Management</td><td>301</td><td>14</td>
+        </tr>
+        <tr>
+            <td>Shannon</td><td>Mitchell</td><td>Engineering Intern</td><td>Materials</td><td>306</td><td>35</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const employeeTable = document.getElementById('employeeTable');
+
+    toggleButton.addEventListener('click', () => {
+        if (employeeTable.style.display === 'none') {
+            employeeTable.style.display = 'table';
+            toggleButton.textContent = 'Close Employee Data';
+        } else {
+            employeeTable.style.display = 'none';
+            toggleButton.textContent = 'Get Employee Data';
+        }
+    });
+</script>
+
+</body>
+</html>

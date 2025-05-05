@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab10</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div id="main">  
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">What is it Web security UI?</a>
+                <a href="important.html">Why is is important?</a>
+                <a href="uses.html">How is it used?</a>
+                <a href="sources.html">Sources</a>
+              </div>
+              <span onclick="openNav()">Open navigation</span>
+ <h1>
+    Web Security UI
+ </h1>
+<h2>
+    Why is it important?
+</h2>
+<p>
+    These guidelines help users make informed decisions about their security and safety online. Web user agents (browsers) have a responsibility to show information about the security of a site and other relevant information like the company that owns the site. Users need to have a good understanding of what makes a site safe especially if it is handling their personal information.<br><br>
+The guidelines also make the user experience more satisfying and rewarding. This can be done by showing the user what is going on behind the scenes when they see an error pop up or a validation message. To communicate those security messages, you can use icons and other recognizable ways to show ‘good’ or ‘bad’ so users with varying experience in technology can all understand.<br><br>
+Lastly, it is important to show users that they have power over their safety online and the safety of their information. It feels good to know that your information won’t end up in the wrong hands. Companies can use these guidelines to help build trust with users and grow their business. 
+
+</p>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    } 
+</script>
+</div>
+</main>
+</body>
+</html>

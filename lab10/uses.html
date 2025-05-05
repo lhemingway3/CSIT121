@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab10</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div id="main">  
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">What is it Web security UI?</a>
+                <a href="important.html">Why is is important?</a>
+                <a href="uses.html">How is it used?</a>
+                <a href="sources.html">Sources</a>
+              </div>
+              <span onclick="openNav()">Open navigation</span>
+ <h1>
+    Web Security UI
+ </h1>
+<h2>
+    How is it used?
+</h2>
+<p>
+    When a site requires a certificate, these guidelines suggest that there should be a user interaction of clicking ‘accept’ or ‘decline’. Browsers should also show information about the certificate, like the name of the company and location. Accessibility is important here to make sure that the information is readable and the buttons are easy to navigate. <br><br>
+Users must be informed about where there information is going when they fill out a form. There must be a warning if there form submissions are going to an unsecured channel and that will be stopped from happening. If any HTTP transactions happen that are not strongly protected, the user should be notified.<br><br>
+Visual cues are important to convey any messages about security, but there needs to be multiple visual cues to be accessible for everyone. For example, using green and red will work for most people but not all. Symbols like lock icons are well understood to mean secure and will tell the user their information is safe.
+</p>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    } 
+</script>
+</div>
+</main>
+</body>
+</html>

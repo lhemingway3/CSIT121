@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab10</title>
+        <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+<main>
+     <div id="main"> 
+      <div class="topnav" id="myTopnav">
+        <a href="final.html">Home</a>
+        <a href="lab02.html">Labs 1+2</a>
+        <a href="lab03.html">Lab 3</a>
+        <a href="lab04.html">Lab 4</a>
+        <a href="lab05.html">Lab 5</a>
+        <a href="lab06.html">Lab 6</a>
+        <a href="lab07.html">Lab 7</a>
+        <a href="lab08.html">Lab 8</a>
+        <a href="lab09.html">Lab 9</a>
+        <a href="lab10.html" class="active" >Lab 10</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="lab10.html">What is it Web security UI?</a>
+                <a href="important.html">Why is is important?</a>
+                <a href="uses.html">How is it used?</a>
+                <a href="sources.html">Sources</a>
+              </div><br>
+              <span onclick="openNav()">Open Lab 10 navigation</span>
+ <h1>
+    Lab 10: Web Security UI
+ </h1>
+ <article>
+<h2>
+    What is it?
+</h2>
+<p>
+    Web Security User interface guidelines require information to be presented to users about their online safety. This means presenting information in a way that is understandable to users to increase trust. There are users who have a wide range of experience with technology so these guidelines cater to all of those people. <br><br>
+It is essentially communicating the validation going on behind the scenes to user. A good example of this is showing errors in real time while filling out a form to avoid seeing that error only after submitting and having to re-do the whole thing. This way a user can see these errors early on and fix their mistakes. <br><br>
+The goal of these guidelines is to make a better user experience and increase user understanding of how a site works. They are also to promote transparency about where a user’s data is going and whether it is secure or not. It is important to have standards to not overwhelm users and effectively communicate these messages.
+
+</p>
+</article>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    } 
+</script>
+</div>
+</main>
+</body>
+</html>

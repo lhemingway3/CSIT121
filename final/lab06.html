@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab06</title>
+        <link rel="stylesheet" href="style12.css">
+        <style>
+            article {
+            min-width: 800px;
+        }
+        </style>
+</head>
+    <body>  
+    <main>
+        <div class="topnav" id="myTopnav">
+            <a href="final.html">Home</a>
+            <a href="lab02.html">Labs 1+2</a>
+            <a href="lab03.html">Lab 3</a>
+            <a href="lab04.html">Lab 4</a>
+            <a href="lab05.html">Lab 5</a>
+            <a href="lab06.html" class="active" >Lab 6</a>
+            <a href="lab07.html">Lab 7</a>
+            <a href="lab08.html">Lab 8</a>
+            <a href="lab09.html">Lab 9</a>
+            <a href="lab10.html">Lab 10</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        
+        <h1>Lab 6: UI/UX Evaluation</h1>
+    
+        <article>
+        <h2>Website: Baltimore County Public Library Home Page</h2>
+            <p>
+            Website URL: <a href="https://www.bcpl.info/" target="_blank" >BCPL</a> <br><br>
+            Target audience: Someone looking for books or library events <br><br>
+            Website organization: This website has a linear organization and presents content like articles, events, and books each in their own row.<br><br>
+            CRAP Principle: Proximity is used to group similar content like the events and articles. Contrast is also used to make each section different visually. <br><br>
+            </p>
+            <img src="images/bcpl1Copy.jpg" alt="bcplpt1"> 
+        
+
+            <img src="images/bcpl2Copy.jpg" alt="bcplpt1"> 
+            <img src="images/bcpl3Copy.jpg" alt="bcplpt1"> 
+            <img src="images/bcpl4.1Copy.jpg" alt="bcplpt1">
+            <p>Error: ARIA roles incorrectly applied </p>
+            <img src="images/bcpl5.1Copy.jpg" alt="bcplpt1"> 
+            <p>Error: Not enough space to click elements</p>
+            <img src="images/auditCopy.jpg" alt="bcplpt1"> 
+        <h2>Audit score: 76%</h2>
+        <h3>Issues:</h3>
+        <ul>
+            <li>Ensure ARIA Roles Are Correctly Applied: Error on the carousel of books that makes it less accessible.</li>
+            <li>Ensure touch target have sufficient size and space: 3 failing elements that do not meet the minimum touch target size, too small to click.</li>
+            <li>One of those elements is the accessibility statement.</li>
+        </ul>
+        <h2>Site effectiveness</h2>
+        <p>Overall the site is effective to use for most people. Most of its features make it user-friendly.</p>
+        <ul>
+            <li>No long blocks of text</li>
+            <li>Easy to read fonts</li>
+            <li>Contrast between blocks of content</li>
+            <li>Mobile friendly</li>
+        </ul>
+        <p>However, there are some accessibility issues that the audit found.</p>
+        <ul>
+            <li>Small clicking areas</li>
+            <li>Incorrectly applied ARIA(Accessible Rich Internet Applications) roles</li>
+        </ul>
+        </article>
+        <footer>
+            2025 Laura Hemingway
+        </footer>
+    </main>
+    </body>  
+</html>

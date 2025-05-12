@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+        <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+<main>
+    <div class="topnav" id="myTopnav">
+        <a href="final.html">Home</a>
+        <a href="lab02.html">Labs 1+2</a>
+        <a href="lab03.html">Lab 3</a>
+        <a href="lab04.html">Lab 4</a>
+        <a href="lab05.html">Lab 5</a>
+        <a href="lab06.html">Lab 6</a>
+        <a href="lab07.html" class="active" >Lab 7</a>
+        <a href="lab08.html">Lab 8</a>
+        <a href="lab09.html">Lab 9</a>
+        <a href="lab10.html">Lab 10</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <h1>Lab 7: Feedback</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="lab07.html">Lab 7 Home</a></li>
+            <li><a href="contact.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <form class="lab7form" id="myform" aria-label="Feedback form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Firstname Lastname" class="formatting" required aria-required="true">
+        </div>
+        
+        <br><br> 
+        <div>
+        <label for="ranking">Rank my tier list:</label>
+        <select id="ranking" name="ranking">
+          <option value="S">S</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select> 
+    </div>
+    <br><br>
+    <div>
+    <label>Do you have any plants?</label>
+    <input type="radio" id="yesplants" name="plants" value="yes">
+    <label for="yesplants">Yes</label>
+    <input type="radio" id="noplants" name="plants" value="no">
+    <label for="noplants">No</label>
+</div>        
+        
+   <br><br>
+   
+        <div>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" maxlength="1600" rows="3" placeholder="Type your feedback here.." class="formatting" aria-describedby="feedback-hint"></textarea>
+            <p id="feedback-hint" class="hint">Hint: Feedback here</p>
+        </div>
+    
+    <br><br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="email@email.com" class="formatting" required aria-required="true">
+    </div>
+    
+    <br><br>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+    <br>
+    <footer>
+        Laura Hemingway <br>
+        <a href="mailto:he1176223@email.ccbcmd.edu">he1176223@email.ccbcmd.edu</a>
+    </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault(); //stop the browser from submitting the form because this script is handling it. 
+
+            //all the following code get the info from the form and puts it in a constant
+            const name = document.getElementById('name').value;
+            const ranking = document.getElementById('ranking').value;
+            const plants = document.querySelector('input[name="plants"]:checked').value;
+            const feedback = document.getElementById('feedback').value;
+            const email = document.getElementById('email').value;
+
+            //put all the form info into a one long string
+            const data = `Name: ${name}\nRanking: ${ranking}\nPlants?: ${plants}\nFeedback: ${feedback}\nEmail: ${email}`;
+            
+            //The remaining code is used to create and download a text file from the browser - see comments after each line
+            const blob = new Blob([data], { type: 'text/plain' }); //create a blob object and put all the data in it
+            const url = URL.createObjectURL(blob); //create a temp URL to reference the blob
+            const a = document.createElement('a'); //dynamically create an anchor tag
+            a.href = url; //use the blog URL you generated for the dynamically created anchor tag
+            a.download = 'form-data-from-' + name + '.txt'; //create the file name that will be used
+            a.click(); //simulate the clicking of the anchor tag your created 
+            URL.revokeObjectURL(url); //dump the temporary URL - it's no longer needed. 
+        });
+        //YESS I GOT IT TO WORK YAYYYY!!!!!!
+    </script>
+</main>
+</body>
+</html>

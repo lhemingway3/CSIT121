@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lab08</title>
+        <link rel="stylesheet" href="style12.css">
+ 
+</head>
+    <body> 
+      <main>
+      <div id="main">  
+        <div class="topnav" id="myTopnav">
+          <a href="final.html">Home</a>
+          <a href="lab02.html">Labs 1+2</a>
+          <a href="lab03.html">Lab 3</a>
+          <a href="lab04.html">Lab 4</a>
+          <a href="lab05.html">Lab 5</a>
+          <a href="lab06.html">Lab 6</a>
+          <a href="lab07.html">Lab 7</a>
+          <a href="lab08.html" class="active" >Lab 8</a>
+          <a href="lab09.html">Lab 9</a>
+          <a href="lab10.html">Lab 10</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="lab08.html">Home</a>
+            <a href="gary2.html">Gary</a>
+            <a href="duchess2.html">Duchess</a>
+            <a href="cecilia2.html">Cecilia</a>
+          </div><br>
+          <span onclick="openNav()">Open Lab 8 navigation</span>
+          <h1>Lab 08: Squishmallows! ft. Interactive Menu</h1>
+          <article>
+          <h2>How to navigate</h2>
+            <p>
+            Use the side menu to navigate to each page.
+        </p>
+
+</article>
+        <footer>
+            2025 Laura Hemingway CSIT 121. <br><a href="https://wallpapers.com/wallpapers/sage-green-floral-pattern-o3i5trar2jh6p4bj.html" target="_blank">Background Image Source</a>
+        </footer>
+        </div>
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+    </script>
+
+    </main>
+    </body>
+    
